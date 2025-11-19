@@ -1,6 +1,8 @@
 import { Metadata } from "next"
 import "./globals.css"
 import Header from '../components/Header'
+import PageTransition from "@/components/PageTransition";
+import StairTransition from "@/components/StairTransition";
 
 export const metadata: Metadata = {
   title: "Portfolio Home Page",
@@ -16,7 +18,10 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header />
-        {children}
+        <StairTransition />
+        <PageTransition>
+          {children}
+        </PageTransition>
       </body>
     </html>
   );
