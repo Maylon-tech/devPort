@@ -1,4 +1,4 @@
-import { animate, motion } from 'framer-motion'
+import { motion, animate } from 'framer-motion'
 
 // variants
 const stairAnimation = {
@@ -15,7 +15,7 @@ const stairAnimation = {
 
 
 // Calculate the reverse index for staggred delay
-const reverseIndex = (index) => {
+const reverseIndex = (index:any) => {
     const totalSteps = 6
     return totalSteps - index - 1
 }

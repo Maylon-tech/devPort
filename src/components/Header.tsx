@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Nav from "./Nav"
 import { Button } from "./ui/button"
+import MobileNav from "./MobileNav"
 
 const Header = () => {
   return (
@@ -9,7 +10,7 @@ const Header = () => {
         {/* LOGO */}
         <Link href="/">
           <h1 className="text-4xl font-semibold">
-            Luke <span className="text-accent">.</span>
+            Nemoto <span className="text-accent">.</span>
           </h1>
         </Link>
 
@@ -21,7 +22,11 @@ const Header = () => {
           </Link>
         </div>
 
-        
+        {/* Mobile Nav */}
+        <div className="xl:hidden">
+          <MobileNav />
+        </div>
+
       </div>
     </header>
   )
