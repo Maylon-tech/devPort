@@ -25,8 +25,7 @@ const Photo = () => {
             <Image
                 src="/assets/own-bg.png"
                 alt=''
-                priority
-                qualilty={100}
+                priority                
                 fill
                 className='object-contain'
             />
@@ -35,7 +34,6 @@ const Photo = () => {
         {/* CIRCLE */}
         <motion.svg
             className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px]"
-            fill
             viewBox="0 0 506 506"
             xmlns="http//:www.w3.org/2000/svg"
         >
